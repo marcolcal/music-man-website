@@ -1,0 +1,406 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+p{
+  line-height: 2rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 1.1em;
+}
+
+
+h2{
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+header#header{
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+
+header#header > h1 {
+ 
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+
+header#header > h1 a, header#header > h1 a:hover{
+  color: red;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header#header .nav_bar ul{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+    /* position: relative; */
+    /* min-height: 50px; */
+    /* margin-bottom: 20px; */
+    /* border: 1px solid transparent; */
+}
+
+header#header .nav_bar ul li a{
+  color: rgb(177, 168, 168);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+header#header .nav_bar ul li a:hover, .nav_bar ul li a:active{
+  color: white;
+}
+
+main{
+ 
+  width: 90%;
+  max-width: 1200px;
+  margin: 120px auto ;
+}
+
+
+.bio-wrapper .img{
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 9px 10px 5px -5px rgba(0,0,0,0.75);
+}
+.bio-wrapper  img{
+  width:100%;
+  height: 100%;
+ object-fit: fill;
+}
+
+.quote-container > blockquote{
+  padding: 10px 20px;
+  margin-top: 10px ;
+  background-color: #f4f4f4;;
+}
+
+
+/* Song list strats */
+
+#song-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  #song-list li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #333;
+  box-shadow: 9px 10px 5px -5px rgba(0,0,0,0.75);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  }
+  
+  #song-list li span {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  
+  #song-list li button {
+  /* background-color: #333; */
+  border: none;
+  /* color: #fff; */
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 10px;
+  padding: 5px 10px;
+  }
+  
+  #song-list li button:hover {
+  background-color: #555;
+  }
+  
+  #song-list li .hidden {
+  display: none;
+  }
+  #song-list li div.audio_controls{
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      border: none;
+      margin: 0 auto;
+  } 
+  #song-list li div {
+  border: 1px solid #ccc;
+  font-size: 1em;
+  padding: 10px;
+  white-space: pre-line;
+  }
+  
+  .song-list-container{
+      margin-top: 60px; /* add margin to the top of the quote container */
+      padding: 10px;
+      margin-bottom: 60px;
+  }
+  
+  .song-list-section {
+      /* background-color: #f4f4f4; */
+      padding: 20px;
+    }
+    
+    .song-list-container {
+      max-width: 800px;
+      margin: 0 auto;
+      height: calc(80vh - 40px); /* 80% of viewport height minus section padding */
+      overflow-y: auto; /* add vertical scrollbar if content overflows */
+    }
+  
+    li {
+      display: flex;
+      margin-right: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    
+    li button {
+      margin-right: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    
+    li span {
+      margin-right: auto;
+    }
+    
+    li div {
+      flex: 1;
+    }
+  
+    #slider-text{
+      padding-top: 40px;
+      display: block;
+      text-align: center;
+    }
+    #slider-text .col-md-6{
+      overflow: hidden;
+    }
+    
+    #slider-text h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      letter-spacing: 3px;
+      margin: 30px auto;
+      padding-left: 40px;
+    }
+    
+    #myCarousel h4{
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      margin: 10px auto 3px;
+    }
+    #myCarousel h5{
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      margin: 3px auto 2px;
+    }
+    #myCarousel h6{
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;;
+      font-size: 10px;
+      margin: 2px auto 5px;
+    }
+    .badge {
+      background: #b20c0c;
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      line-height: 31px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      border: 2px solid #FFF;
+      box-shadow: 0 0 0 1px #b20c0c;
+      top: 5px;
+      right: 25%;
+    }
+    #slider-control img{
+      padding-top: 60%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 992px){
+    #slider-control img {
+      padding-top: 70px;
+      margin: 0 auto;
+    }
+    }
+/*     
+    .multi-item-carousel .carousel-control {
+      width: 4%;
+      background-image: none;
+    }
+    .multi-item-carousel .carousel-control.left {
+      margin-left: 5px;
+    }
+    .multi-item-carousel .carousel-control.right {
+      margin-right: 5px;
+    }
+    .multi-item-carousel .cloneditem-1,
+    .multi-item-carousel .cloneditem-2,
+    .multi-item-carousel .cloneditem-3,
+    .multi-item-carousel .cloneditem-4,
+    .multi-item-carousel .cloneditem-5 {
+      display: none;
+    }
+    @media all and (min-width: 768px) {
+      .multi-item-carousel .carousel-inner > .active.left,
+      .multi-item-carousel .carousel-inner > .prev {
+        left: -50%;
+      }
+      .multi-item-carousel .carousel-inner > .active.right,
+      .multi-item-carousel .carousel-inner > .next {
+        left: 50%;
+      }
+      .multi-item-carousel .carousel-inner > .left,
+      .multi-item-carousel .carousel-inner > .prev.right,
+      .multi-item-carousel .carousel-inner > .active {
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner .cloneditem-1 {
+        display: block;
+      }
+    }
+    @media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+      .multi-item-carousel .carousel-inner > .item.active.right,
+      .multi-item-carousel .carousel-inner > .item.next {
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner > .item.active.left,
+      .multi-item-carousel .carousel-inner > .item.prev {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner > .item.left,
+      .multi-item-carousel .carousel-inner > .item.prev.right,
+      .multi-item-carousel .carousel-inner > .item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+      }
+    }
+    @media all and (min-width: 992px) {
+      .multi-item-carousel .carousel-inner > .active.left,
+      .multi-item-carousel .carousel-inner > .prev {
+        left: -16.666%;
+      }
+      .multi-item-carousel .carousel-inner > .active.right,
+      .multi-item-carousel .carousel-inner > .next {
+        left: 16.666%;
+      }
+      .multi-item-carousel .carousel-inner > .left,
+      .multi-item-carousel .carousel-inner > .prev.right,
+      .multi-item-carousel .carousel-inner > .active {
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner .cloneditem-2,
+      .multi-item-carousel .carousel-inner .cloneditem-3,
+      .multi-item-carousel .carousel-inner .cloneditem-4,
+      .multi-item-carousel .carousel-inner .cloneditem-5,
+      .multi-item-carousel .carousel-inner .cloneditem-6  {
+        display: block;
+      }
+    }
+    @media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+      .multi-item-carousel .carousel-inner > .item.active.right,
+      .multi-item-carousel .carousel-inner > .item.next {
+        -webkit-transform: translate3d(16.666%, 0, 0);
+        transform: translate3d(16.666%, 0, 0);
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner > .item.active.left,
+      .multi-item-carousel .carousel-inner > .item.prev {
+        -webkit-transform: translate3d(-16.666%, 0, 0);
+        transform: translate3d(-16.666%, 0, 0);
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner > .item.left,
+      .multi-item-carousel .carousel-inner > .item.prev.right,
+      .multi-item-carousel .carousel-inner > .item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+      }
+    }
+   */
+  /* Swiper styles start here */
+ .swiper {
+  width: 100%;
+  height: 70vh;
+  margin: 30px auto;
+  position: relative;
+  z-index: 0;
+}
+
+.swiper-wrapper{
+  width: 100%;
+}
+
+.swiper .swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 500px !important; */
+}
+
+.swiper .swiper-slide img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ /* Swiper styles end */
+  .bold {
+  font-weight: bold;
+  }
+
+  #contact{
+    width: 50%;
+    margin: 30px auto;
+  }
+
+  #contact form .form-group input{
+    height: 50px;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  footer .socials > a{
+    color: #333;
+    margin-right: 10px;
+  }

@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+  }
+  
+  header {
+      background-color: #333;
+      display: flex;
+    justify-content: right;
+  }
+  /* 
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+  }
+  
+  nav li {
+      float: left;
+      margin: 0 10px;
+  }
+  
+  nav li a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: x-large;
+  }
+  
+  nav li a:hover {
+      background-color: #4CAF50;
+      border-bottom: 2px solid #fff;
+  }
+  
+  .navbar {
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #333;
+      color: #fff;
+      other styles 
+  } */
+  section {
+    height: 100vh;
+    padding: 50px;
+    margin-top: 30px;
+  }
+  
+  /* Set the background color of each section */
+  #bio {
+    background-color: #f7f7f7;
+  
+  }
+  
+  #music {
+    background-color: #ebebeb;
+  }
+  
+  #slideshow {
+    background-color: #d7d7d7;
+  }
+  
+  #contact {
+    background-color: #c3c3c3;
+  }
+  
+  /* Center the content inside each section */
+  .section-content {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    height: 100%;
+  }
+  
+  /* Add padding to the top and bottom of the sections */
+  section + section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  section h2 {
+      margin-top: 0;
+  }
+  
+  header h1 {
+      color: #f00; /* set the text color to red */
+      font-size: 3em; /* set the font size to 3 times the default size */
+      font-weight: bold; /* set the font weight to bold */
+      text-transform: uppercase; /* transform the text to uppercase */
+  }
+  
+  .bio-wrapper {
+      /* display: flex; use flexbox to align the image and text
+      align-items: center; center the image and text vertically */
+      overflow: auto; /* create a new block formatting context */
+    }
+  
+  .bio-image {
+      float: left; /* float the image to the left */
+      margin-right: 20px; /* add a margin to the right of the image to create space */
+      max-width: 19%; /* set the maximum width of the image to the width of the container */
+    }
+  
+  .bio-wrapper p {
+  margin: 25px 0 0 0; /* remove default margin to avoid spacing issues */
+  text-align: justify; /* justify the text to create a clean look */
+  font-family: "Helvetica Neue", Arial, sans-serif; /* set the font family */
+  font-size: 18px; /* set the font size */
+  line-height: 1.8; /* set the line height */
+  color: #333; /* set the font color */
+  
+  }
+  
+  .quote-container {
+      margin-top: 45px; /* add margin to the top of the quote container */
+      padding: 5px;
+    }
+  
+    .bio-quote {
+      margin: 5px 0; /* add margin to the top and bottom of the blockquote */
+      padding: 4px; /* add padding to the blockquote */
+      background-color: #f9f9f9; /* set the background color of the blockquote */
+      border-left: 10px solid #ccc; /* add a left border to the blockquote */
+      font-size: 1em; /* set the font size of the blockquote text */
+      font-style: italic; /* set the font style of the blockquote text */
+  }
+    
+    .bio-quote p {
+      font-style: italic; /* set the font style of the quote to italic */
+      margin-bottom: 1px; /* add margin to the bottom of the quote */
+      font-size: 1em; /* set the font size of the quote text */
+    }
+    
+    .bio-quote cite {
+      font-style: normal; /* set the font style of the citation to normal */
+      font-size: 0.8em; /* reduce the font size of the citation */
+    }
+  
+  .bio-quote + .bio-quote {
+  margin-top: 1px; /* add extra margin to the top of the second and subsequent blockquotes */
+  }
+  
+  
+  #song-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  #song-list li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  }
+  
+  #song-list li span {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  
+  #song-list li button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 10px;
+  padding: 5px 10px;
+  }
+  
+  #song-list li button:hover {
+  background-color: #555;
+  }
+  
+  #song-list li .hidden {
+  display: none;
+  }
+  
+  #song-list li div {
+  border: 1px solid #ccc;
+  font-size: 1em;
+  padding: 10px;
+  white-space: pre-line;
+  }
+  
+  .song-list-container{
+      margin-top: 60px; /* add margin to the top of the quote container */
+      padding: 10px;
+      margin-bottom: 60px;
+  }
+  
+  .song-list-section {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    
+    .song-list-container {
+      max-width: 800px;
+      margin: 0 auto;
+      height: calc(80vh - 40px); /* 80% of viewport height minus section padding */
+      overflow-y: auto; /* add vertical scrollbar if content overflows */
+    }
+  
+    li {
+      display: flex;
+      margin-right: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    
+    li button {
+      margin-right: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    
+    li span {
+      margin-right: auto;
+    }
+    
+    li div {
+      flex: 1;
+    }
+  
+    #slider-text{
+      padding-top: 40px;
+      display: block;
+      text-align: center;
+    }
+    #slider-text .col-md-6{
+      overflow: hidden;
+    }
+    
+    #slider-text h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      letter-spacing: 3px;
+      margin: 30px auto;
+      padding-left: 40px;
+    }
+    
+    #myCarousel h4{
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      margin: 10px auto 3px;
+    }
+    #myCarousel h5{
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      margin: 3px auto 2px;
+    }
+    #myCarousel h6{
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;;
+      font-size: 10px;
+      margin: 2px auto 5px;
+    }
+    .badge {
+      background: #b20c0c;
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      line-height: 31px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      border: 2px solid #FFF;
+      box-shadow: 0 0 0 1px #b20c0c;
+      top: 5px;
+      right: 25%;
+    }
+    #slider-control img{
+      padding-top: 60%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 992px){
+    #slider-control img {
+      padding-top: 70px;
+      margin: 0 auto;
+    }
+    }
+    
+    .multi-item-carousel .carousel-control {
+      width: 4%;
+      background-image: none;
+    }
+    .multi-item-carousel .carousel-control.left {
+      margin-left: 5px;
+    }
+    .multi-item-carousel .carousel-control.right {
+      margin-right: 5px;
+    }
+    .multi-item-carousel .cloneditem-1,
+    .multi-item-carousel .cloneditem-2,
+    .multi-item-carousel .cloneditem-3,
+    .multi-item-carousel .cloneditem-4,
+    .multi-item-carousel .cloneditem-5 {
+      display: none;
+    }
+    @media all and (min-width: 768px) {
+      .multi-item-carousel .carousel-inner > .active.left,
+      .multi-item-carousel .carousel-inner > .prev {
+        left: -50%;
+      }
+      .multi-item-carousel .carousel-inner > .active.right,
+      .multi-item-carousel .carousel-inner > .next {
+        left: 50%;
+      }
+      .multi-item-carousel .carousel-inner > .left,
+      .multi-item-carousel .carousel-inner > .prev.right,
+      .multi-item-carousel .carousel-inner > .active {
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner .cloneditem-1 {
+        display: block;
+      }
+    }
+    @media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+      .multi-item-carousel .carousel-inner > .item.active.right,
+      .multi-item-carousel .carousel-inner > .item.next {
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner > .item.active.left,
+      .multi-item-carousel .carousel-inner > .item.prev {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner > .item.left,
+      .multi-item-carousel .carousel-inner > .item.prev.right,
+      .multi-item-carousel .carousel-inner > .item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+      }
+    }
+    @media all and (min-width: 992px) {
+      .multi-item-carousel .carousel-inner > .active.left,
+      .multi-item-carousel .carousel-inner > .prev {
+        left: -16.666%;
+      }
+      .multi-item-carousel .carousel-inner > .active.right,
+      .multi-item-carousel .carousel-inner > .next {
+        left: 16.666%;
+      }
+      .multi-item-carousel .carousel-inner > .left,
+      .multi-item-carousel .carousel-inner > .prev.right,
+      .multi-item-carousel .carousel-inner > .active {
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner .cloneditem-2,
+      .multi-item-carousel .carousel-inner .cloneditem-3,
+      .multi-item-carousel .carousel-inner .cloneditem-4,
+      .multi-item-carousel .carousel-inner .cloneditem-5,
+      .multi-item-carousel .carousel-inner .cloneditem-6  {
+        display: block;
+      }
+    }
+    @media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+      .multi-item-carousel .carousel-inner > .item.active.right,
+      .multi-item-carousel .carousel-inner > .item.next {
+        -webkit-transform: translate3d(16.666%, 0, 0);
+        transform: translate3d(16.666%, 0, 0);
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner > .item.active.left,
+      .multi-item-carousel .carousel-inner > .item.prev {
+        -webkit-transform: translate3d(-16.666%, 0, 0);
+        transform: translate3d(-16.666%, 0, 0);
+        left: 0;
+      }
+      .multi-item-carousel .carousel-inner > .item.left,
+      .multi-item-carousel .carousel-inner > .item.prev.right,
+      .multi-item-carousel .carousel-inner > .item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+      }
+    }
+  
+  .bold {
+  font-weight: bold;
+  }

@@ -1,0 +1,107 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+  text-align: center;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+nav li {
+	float: left;
+  margin: 0 10px;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff;
+  }
+
+nav li a:hover {
+	background-color: #4CAF50;
+}
+
+section {
+  height: 100vh;
+  padding: 50px;
+  margin-top: 110px;
+}
+
+html, body {
+    scroll-behavior: smooth;
+  }
+
+  /* h2[id], h3[id], h4[id], h5[id], h6[id] {
+    scroll-margin-top: 50px;
+  } */
+h2#my-heading {
+    /* CSS styles here */
+    scroll-margin-top: 50px;
+  }
+
+/* 
+#my-heading {
+    CSS styles here
+  }*/
+
+/* Set the background color of each section */
+#bio {
+  background-color: #f7f7f7;
+  /*margin-top: 100px;*/ /* Adjust the margin-top value to create space between the navigation bar and the section */
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+#music {
+  background-color: #ebebeb;
+}
+
+#slideshow {
+  background-color: #d7d7d7;
+}
+
+#contact {
+  background-color: #c3c3c3;
+}
+
+.portrait-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  margin: 10px;
+}
+
+.portrait-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Personal Website</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	/ Add the new slick-theme.css if you want the default styling
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'><link rel="stylesheet" href="./style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Lynn Mulkey</h1>
+		<nav>
+			<ul>
+				<li><a href="#bio">Bio</a></li>
+				<li><a href="#music">Music</a></li>
+				<li><a href="#slide-show">Photos</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="bio">
+			<h2>My Bio</h2>
+			<div class="section-content">
+				<p>Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+					Visit the Bitnami XAMPP page for details on the currently available apps. Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+					Visit the Bitnami XAMPP page for details on the currently available apps.Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+					Visit the Bitnami XAMPP page for details on the currently available apps. Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+					Visit the Bitnami XAMPP page for details on the currently available apps. Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+					Visit the Bitnami XAMPP page for details on the currently available apps.</p>
+					<p>Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+						Visit the Bitnami XAMPP page for details on the currently available apps. Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+						Visit the Bitnami XAMPP page for details on the currently available apps.Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+						Visit the Bitnami XAMPP page for details on the currently available apps. Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+						Visit the Bitnami XAMPP page for details on the currently available apps. Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. 
+						Visit the Bitnami XAMPP page for details on the currently available apps.</p>
+	
+			</div>
+		</section>
+		<section id="music">
+			<h2>My Music</h2>
+			<div class="section-content">
+				<div>
+					<h2>Music 1</h2>
+					<p>This is where you can showcase your musical creations.</p>
+					<audio id="myAudio" src="media/mixkit-tech-house-vibes-130.mp3"></audio>
+					<progress id="progress" value="0" max="100"></progress>
+					<button id="playButton">Play</button>
+					<h2>Lyrics</h2>
+					<button onclick="openPDF()">My Song</button>
+					<button onclick="openPDF2()">Open PDF</button>
+					<a href="#" onclick="window.close()">Close Window</a>
+					<a target="_blank" alt="StackExchange Handbook" title="StackExchange Handbook"
+					href="pdfs/20AfroMexicanResources-1.pdf">My Song</a>
+					<iframe src="url=file:///pdfs/20AfroMexicanResources-1.pdf&embedded=true" 
+style="width:600px; height:500px;" frameborder="0"></iframe>
+				</div>
+				<div>
+					<h2>Music 2</h2>
+					<p>This is where you can showcase your musical creations.</p>
+					<audio id="myAudio" src="media/mixkit-hip-hop-02-738.mp3"></audio>
+					<progress id="progress" value="0" max="100"></progress>
+					<button id="playButton">Play</button>
+				</div>
+				<div>
+					<h2>Music 3</h2>
+					<p>This is where you can showcase your musical creations.</p>
+					<audio id="myAudio" src="media/mixkit-hazy-after-hours-132.mp3"></audio>
+					<progress id="progress" value="0" max="100"></progress>
+					<button id="playButton">Play</button>
+				</div>
+		    </div>
+		</section>
+			<script>
+			var audio = document.getElementById("myAudio");
+			var progressBar = document.getElementById("progress");
+			var playButton = document.getElementById("playButton");
+			playButton.addEventListener("click", function() {
+			  if (audio.paused) {
+			    audio.play();
+			    playButton.innerHTML = "Pause";
+			  } else {
+			    audio.pause();
+			    playButton.innerHTML = "Play";
+			  }
+			});
+			audio.addEventListener("timeupdate", function() {
+			  var percentComplete = (audio.currentTime / audio.duration) * 100;
+			  progressBar.value = percentComplete;
+			});
+			</script>
+		</section>
+		<!-- partial:index.partial.html -->
+<div class="app">
+
+	<div class="cardList">
+		<button class="cardList__btn btn btn--left">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-left"></use>
+				</svg>
+			</div>
+		</button>
+
+		<div class="cards__wrapper">
+			<div class="card current--card">
+				<div class="card__image">
+					<img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+				</div>
+			</div>
+
+			<div class="card next--card">
+				<div class="card__image">
+					<img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+				</div>
+			</div>
+
+			<div class="card previous--card">
+				<div class="card__image">
+					<img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<button class="cardList__btn btn btn--right">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-right"></use>
+				</svg>
+			</div>
+		</button>
+	</div>
+
+	<div class="infoList">
+		<div class="info__wrapper">
+			<div class="info current--info">
+				<h1 class="text name">Highlands</h1>
+				<h4 class="text location">Scotland</h4>
+				<p class="text description">The mountains are calling</p>
+			</div>
+
+			<div class="info next--info">
+				<h1 class="text name">Machu Pichu</h1>
+				<h4 class="text location">Peru</h4>
+				<p class="text description">Adventure is never far away</p>
+			</div>
+
+			<div class="info previous--info">
+				<h1 class="text name">Chamonix</h1>
+				<h4 class="text location">France</h4>
+				<p class="text description">Let your dreams come true</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="app__bg">
+		<div class="app__bg__image current--image">
+			<img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+		</div>
+		<div class="app__bg__image next--image">
+			<img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+		</div>
+		<div class="app__bg__image previous--image">
+			<img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+		</div>
+	</div>
+</div>
+
+<div class="loading__wrapper">
+	<div class="loader--text">Loading...</div>
+	<div class="loader">
+		<span></span>
+	</div>
+</div>
+
+
+<svg class="icons" style="display: none;">
+	<symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='328 112 184 256 328 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+	<symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='184 112 328 256 184 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+<div class="support">
+	<a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
+	<a href="https://dribbble.com/devloop01" target="_blank"><i class="fab fa-dribbble"></i></a>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script><script  src="./script.js"></script>
+
+		<section id=slide-show>
+			
+			<!-- <h2>Images</h2>
+			<div class="section-content"></div>
+				<div class="slideshow-wrapper">
+					<div class="slideshow-container">
+						<div class="slide">
+							<img src="images/FullSizeRender.jpeg">
+							<img src="images/IMG_0151.JPEG">
+							<img src="images/IMG_0498.JPEG">
+						</div>
+						 <div class="slide">
+							<img src="images/FullSizeRender.jpeg">
+						</div>
+						<div class="slide">
+							<img src="images/IMG_0151.JPEG">
+						</div>
+						<div class="slide">
+							<img src="images/IMG_0498.JPEG">
+						</div> 
+					</div>
+				</div>
+			</div> -->
+		</section>
+		<script type="text/javascript">
+		var slides = document.querySelectorAll('.slide');
+		var currentSlide = 0;
+		function showSlide(slideIndex) {
+		  slides[currentSlide].classList.remove('active');
+		  slides[slideIndex].classList.add('active');
+		  currentSlide = slideIndex;
+		}
+		showSlide(0);
+		setInterval(function() {
+		  var nextSlide = (currentSlide + 1) % slides.length;
+		  showSlide(nextSlide);
+		}, 5000);
+		</script>	
+		<section id="contact">
+			<div class="section-content">
+				<h2>Contact</h2>
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name"><br><br>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email"><br><br>
+					<label for="message">Message:</label>
+					<textarea id="message" name="message"></textarea><br><br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</section>
+		<script src="script.js">
+function openPDF() {
+    window.open("pdfs/20AfroMexicanResources-1.pdf");
+  }
+  function openPDF2() {
+    window.open("pdfs/20AfroMexicanResources-1.pdf", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+  }
+
+
+		</script> <!-- Link to external JavaScript file -->
+	</main>
+	<footer>
+		<p>Copyright © 2023</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<style>
+
+ /* Swiper styles start here */
+ .swiper {
+    width: 80%;
+    height: 70vh;
+    margin: 30px auto;
+  }
+
+  .swiper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper .swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+   /* Swiper styles end */
+</style>
+</head>
+
+<body>
+
+
+  <section class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/lynn_guitar_large.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/LynnPlayingMusic.JPG" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/LynnSinging.JPG" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/LynnwithNewLifeBandandCraig.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/LynnwithNewLifeBandandCraig.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/LYnnwithNewLifeBandOutside.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/Lynnwithtongueout.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/Palidan_Lynn_1960.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/PlayingLynn.JPG" alt="">
+        </div>
+    </div>
+
+    <div class=" swiper-button-next"></div>
+    <div class=" swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</section>
+
+
+  <script>
+    let swiper = new Swiper(".swiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation:{
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints:{
+    640:{
+      slidesPerView: 2,
+      spaceBetween: 3
+    },
+    768:{
+      slidesPerView: 2,
+      spaceBetween: 5
+    },
+    1024:{
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
+})
+  </script>
+
+</body>
+</html>
